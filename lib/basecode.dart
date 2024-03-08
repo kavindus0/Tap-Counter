@@ -8,28 +8,43 @@ class BaseFile extends StatefulWidget {
 }
 
 class _BaseFileState extends State<BaseFile> {
+  int taps = 0;
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        appBar: AppBar(actions: const [
-          Icon(Icons.restart_alt),
-          Spacer(),
-          Text("Tap Counter"),
-          Spacer(),
-          Icon(Icons.info),
+        appBar: AppBar(actions: [
+          IconButton(
+              onPressed: () {
+                setState(() {
+                  taps = 0;
+                });
+              },
+              icon: const Icon(Icons.restart_alt)),
+          const Spacer(),
+          const Text("Tap Counter"),
+          const Spacer(),
+          const Icon(Icons.info),
         ]),
         body: GestureDetector(
-          onTap: () {},
+          onTap: () {
+            setState(() {
+              taps++;
+            });
+          },
           child: Center(
             child: Container(
               color: Colors.red,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-                  Spacer(),
-                  Center(child: Text("Tap Me")),
-                  Spacer(),
+                  const Spacer(),
+                  Center(
+                      child: Text(
+                    taps.toString(),
+                    style: const TextStyle(color: Colors.white, fontSize: 100),
+                  )),
+                  const Spacer(),
                 ],
               ),
             ),
