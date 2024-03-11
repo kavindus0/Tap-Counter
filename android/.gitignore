@@ -1,4 +1,6 @@
 gradle-wrapper.jar
+/.idea
+.metadata
 /.gradle
 /captures/
 /gradlew
