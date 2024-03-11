@@ -1,7 +1,7 @@
 name: tapcalculator
-description: "tap counter in flutter"
+description: "tap counter app in flutter, Count all taps on One App"
 publish_to: 'none'
-version: 1.0.0+1
+version: 1.0.2
 
 environment:
   sdk: '>=3.3.0 <4.0.0'
