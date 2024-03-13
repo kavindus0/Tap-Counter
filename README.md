@@ -40,7 +40,9 @@ This is a basic tap counter app built using Flutter. It allows you to keep track
 ### Built With
 
 * **Flutter:** A cross-platform framework for building beautiful, native-looking apps. ([https://docs.flutter.dev/get-started/codelab](https://docs.flutter.dev/get-started/codelab))
+
 * **info_popup:** A Flutter package for displaying informative popups. ([https://pub.dev/packages/info_popup](https://pub.dev/packages/info_popup))
+
 * **animated_flip_counter:** A Flutter package for displaying animated flip counters. ([https://pub.dev/packages/animated_flip_counter](https://pub.dev/packages/animated_flip_counter))
 
 
