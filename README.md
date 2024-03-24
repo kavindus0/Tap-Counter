@@ -1,4 +1,4 @@
-## Tap Counter: A Simple Flutter App 
+## Tap Counter
 
 This is a basic tap counter app built using Flutter. It allows you to keep track of the number of times you tap the screen. 
 
